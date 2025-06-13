@@ -1,30 +1,36 @@
-# ログインページ作成
+# テレクローン
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+電話番号・注文を管理する Next.js 製のサンプルアプリです。ログイン画面からダッシュボードに遷移し、電話番号や注文情報の CRUD を行う UI が用意されています。UI コンポーネントは Radix UI と Tailwind CSS を利用し、[v0.dev](https://v0.dev) から生成されたコードをベースにしています。
 
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/kiichi-pmagentjps-projects/v0-)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/ONQuuzIBPCO)
 
-## Overview
+## サービス概要
+- ログイン後にダッシュボードへアクセスし、電話番号一覧や注文一覧を閲覧できます。
+- 画面はすべて仮データで構成されており、実際のバックエンド処理は未実装です。
+- 今後 Supabase 認証や CSV 出力などの機能追加を想定しています。
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## ディレクトリ構成
+```
+app/          ページコンポーネント (login, dashboard, numbers, orders など)
+components/   再利用可能な UI コンポーネント群
+lib/          補助的なユーティリティ関数
+public/       画像などの静的ファイル
+styles/       グローバル CSS
+next.config.mjs  Next.js の設定
+```
 
-## Deployment
+## ローカル開発
+1. 依存パッケージをインストール
+   ```bash
+   pnpm install
+   ```
+2. 開発サーバを起動
+   ```bash
+   pnpm dev
+   ```
+3. `http://localhost:3000` をブラウザで開きます。
 
-Your project is live at:
-
-**[https://vercel.com/kiichi-pmagentjps-projects/v0-](https://vercel.com/kiichi-pmagentjps-projects/v0-)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/ONQuuzIBPCO](https://v0.dev/chat/projects/ONQuuzIBPCO)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 参考
+- プロジェクトは [v0.dev](https://v0.dev) で作成・更新されると自動でこのリポジトリに同期されます。
+- デプロイ先は Vercel です。
