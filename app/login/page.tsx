@@ -51,7 +51,6 @@ export default function LoginPage() {
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <h1 className="text-2xl font-bold text-white mb-2">テレクローン</h1>
-              <p className="text-white/80 text-sm">システムにアクセス</p>
             </div>
 
             {/* ログインボタン */}
