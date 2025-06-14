@@ -50,7 +50,7 @@ export default function LoginPage() {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mb-4">
                 <Phone className="w-8 h-8 text-white" />
               </div>
-              <h1 className="text-2xl font-bold text-white mb-2">テレクローン</h1>
+              <h1 className="text-2xl font-bold text-white mb-2">テレAIクローン</h1>
             </div>
 
             {/* ログインボタン */}
