@@ -17,9 +17,15 @@ export function Header() {
         <div className="text-sm text-gray-600">
           社内テストアカウント <span className="font-medium">管理者</span>
         </div>
-        <Button variant="outline" size="sm">
-          <FileText className="mr-2 h-4 w-4" />
-          マニュアル
+        <Button variant="outline" size="sm" asChild>
+          <a
+            href="https://te0.jp/support"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FileText className="mr-2 h-4 w-4" />
+            マニュアル
+          </a>
         </Button>
         <Button variant="outline" size="sm" onClick={handleLogout}>
           <LogOut className="mr-2 h-4 w-4" />
